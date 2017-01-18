@@ -32,6 +32,56 @@ ll p(ll a, ll b)
 	return k*k;
 }
 
+ll ans;
+struct DSU
+{
+	int S;
+	
+	struct node
+	{
+		int p; ll sum;
+	};
+	vector<node> dsu;
+	
+	DSU(int n)
+	{
+		S = n;
+		for(int i = 0; i < n; i++)
+		{
+			node tmp;
+			tmp.p = i; tmp.sum = 1;
+			dsu.pb(tmp);
+		}
+		ans=n;
+	}
+	
+	void reset(int n)
+	{
+		dsu.clear();
+		S = n;
+		for(int i = 0; i < n; i++)
+		{
+			node tmp;
+			tmp.p = i; tmp.sum = 1;
+			dsu.pb(tmp);
+		}
+	}
+	
+	int rt(int u)
+	{
+		if(dsu[u].p == u) return u;
+		dsu[u].p = rt(dsu[u].p);
+		return dsu[u].p;
+	}
+	
+	void merge(int u, int v)
+	{
+		u = rt(u); v = rt(v);
+		if(u == v) return ;
+		if(rand()&1) swap(u, v);
+		dsu[v].p = u;
+		ans+=dsu[u].sum*dsu[v].sum*2LL;
+		dsu[u].sum += dsu[v].sum;
 
 int main()
 {
