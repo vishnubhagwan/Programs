@@ -31,7 +31,7 @@ ll parent[N], r[N], n;
 void MakeSet()
 {
 	for(ll i = 1 ; i < n; i++)
-		parent[i] = i;
+		parent[i] = i, r[i] = 1;
 	return;
 }
 
@@ -41,18 +41,14 @@ ll find(ll x)
 	return parent[x] = find(parent[x]);
 }
 
-ll Union(ll x, ll y)
+void Union(ll x, ll y)
 {
-	ll root_x = find(parent[x]), root_y = find(find(parent[y]));
-	if(root_x == root_y) return root_y;
+	ll root_x = find(parent[x]), root_y = find(parent[y]);
+	if(root_x == root_y) return;
 	if(r[root_x] > r[root_y]) swap(root_x, root_y);
-	if(r[root_x] == r[root_y])
-	{
-		parent[root_x] = root_y;
-		r[root_y]++;
-	}
 	parent[root_x] = root_y;
-	return root_y;
+	r[root_y] += r[root_x];
+	return;
 }
 
 int main()
