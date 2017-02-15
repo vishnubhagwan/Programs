@@ -40,40 +40,33 @@ void build(int l=0, int r=n-1, int id=1)
 {
 	if(l == r)
 	{
-		seg[id] = a[l];
 		return;
 	}
-	int m = (l+r)>>1;
-	build(l,m,2*id);
-	build(m+1,r,2*id+1);
-	seg[id] = min(seg[2*id], seg[2*id+1]);
+	int m = (l+r)>>1, ch1 = 2*id, ch2 = 2*id+1;
+	build(l,m,ch1);
+	build(m+1,r,ch2);
 	return;
 }
 
 void update(int y, int x, int l=0, int r=n-1, int id=1)
 {
+	if(l > y || r < x) return;
 	if(l == r)
 	{
-		seg[id] = y;
 		return;
 	}
 	int m = (l+r)>>1;
-	if(l <= x && x <= m)
-		update(y,x,l,m,2*id);
-	else if(m+1 <= x && x <= r)
-		update(y,x,m+1,r,2*id+1);
-	seg[id] = min(seg[2*id], seg[2*id+1]);
+	update(y,x,l,m,2*id);
+	update(y,x,m+1,r,2*id+1);
 	return;
 }
 
 ll query(int x, int y, int l=0, int r=n-1, int id=1)
 {
 	if(r < x || l > y)
-		return INT_MAX;
 	if(l >= x && r <= y)
-		return seg[id];
-	int m = (l+r)>>1;
-	return min(query(x,y,l,m,2*id), query(x,y,m+1,r,2*id+1));
+	int m = (l+r)>>1, ch1 = 2*id, ch2 = 2*id+1;
+	ll q1 = query(x,y,l,m,ch1), q2 = query(x,y,m+1,r,ch2);
 }
 
 int main()
