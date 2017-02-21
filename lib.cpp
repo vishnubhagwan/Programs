@@ -19,8 +19,16 @@ using namespace std;
 #define pqueue priority_queue<ll,vector<ll>, greater<ll> >
 #define sz(s) s.size()
 #define trace(a) {for(auto i:a) cout << i << ' '; cout << '\n';}
-#define out(a) cout << a << '\n'
 #define set(a) memset(a,0,sizeof(a))
+#define si(n) scanf("%d",&n)
+#define pi(n) printf("%d\n",n)
+#define sl(n) scanf("%lld",&n)
+#define pl(n) printf("%lld\n",n)
+#define smi(n,m) scanf("%d%d",&n,&m)
+#define pmi(n,m) printf("%d %d\n",n,m)
+#define sml(n,m) scanf("%lld%lld",&n,&m)
+#define pml(n,m) printf("%lld %lld\n",n,m)
+
 typedef long long int ll;
 typedef pair<int, int> ii;
 
