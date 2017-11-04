@@ -1,16 +1,11 @@
-#include <iostream>
-#include <cstring>
-#include <vector>
-#include <algorithm>
-#include <stack>
-#include <queue>
-#include <set>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
 #define all(M) (M).begin(), (M).end()
-#define vi vector<ll>
+#define vi vector<int>
+#define vl vector<ll>
 #define sort(v) sort(all(v))
-#define fo(i,m,n) for(auto i = m ; i < n ; i++)
+#define reverse(v) reverse(all(v))
+#define fo(i,m,n) for(int i = m ; i < n ; i++)
 #define rep(i,n) fo(i,0,n)
 #define f first
 #define s second
@@ -18,8 +13,8 @@ using namespace std;
 #define mp make_pair
 #define pqueue priority_queue<ll,vector<ll>, greater<ll> >
 #define sz(s) s.size()
-#define trace(a) {for(auto i:a) cout << i << ' '; cout << '\n';}
-#define set(a) memset(a,0,sizeof(a))
+#define trace(a) {for(int i:a) cout << i << ' '; cout << '\n';}
+//#define set(a) memset(a,0,sizeof(a))
 #define si(n) scanf("%d",&n)
 #define pi(n) printf("%d\n",n)
 #define sl(n) scanf("%lld",&n)
@@ -28,9 +23,17 @@ using namespace std;
 #define pmi(n,m) printf("%d %d\n",n,m)
 #define sml(n,m) scanf("%lld%lld",&n,&m)
 #define pml(n,m) printf("%lld %lld\n",n,m)
+#define ndl '\n'
+#define fast_io {cin.tie(0); ios_base::sync_with_stdio(false);}
 
 typedef long long int ll;
-typedef pair<int, int> ii;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+
+#define N int(1e6)
+#define MIN -int(1e9)
+#define MAX int(1e9)
+
 
 ll p(ll a, ll b)
 {
@@ -261,9 +264,21 @@ struct NumberTheory
 	}
 };
 
+void inp() {
+	return;
+}
+
+void solve() {
+	return;
+}
+
 int main()
 {
-	std::ios::sync_with_stdio(false);
-	cin.tie(0);
+	clock_t beg = clock();
+	fast_io;
+	inp();
+	solve();
+	clock_t end = clock();
+	fprintf(stderr, "%.3f sec\n", (double)(end - beg) / CLOCKS_PER_SEC);
 	return 0;
 }
