@@ -1,0 +1,73 @@
+Software Engineer at VIMANA: Round 1
+VIMANA. Chennai India. 2020.
+
+The Interview process at VIMANA consists of three rounds:
+
+1. This written interview 
+2. Coding round via Skype/F2F 
+3. In-person interview (Technical and HR)  at our office in Chennai. 
+
+Note:  You have to clear each round before proceeding to the next and we will keep you updated with the outcome of each round. 
+
+We will be evaluating your this round based on the following parameters:
+
+- The accuracy of your answers
+- The learning and growth you have shown over your career
+- Your understanding of the Developer role and your experience as a Developer in your current/previous roles
+- What skills you will be able to bring to VIMANA.
+
+This interview will take 60~120 minutes. Incomplete Interview submissions will not be reviewed. We recommend you to type your responses offline and then paste it in the form so that your progress is not lost. 
+* Required
+Email address *
+
+Full Name *
+
+Github Handle
+
+How did you come to know about this job? *
+Mention recruitment agency / Online job portal name.
+
+GROWTH
+Why did you leave your last few jobs (if any)? Why do you want to leave your current position? *
+
+What are your key job acceptance factors? When is the earliest you can join us? *
+
+What skills do you bring to VIMANA? How long do you think will it take for you to start contributing to the team? *
+
+Where do you see yourself as a developer in the next few years? What skills would you like to pickup? *
+
+LEARNING
+What are the last 3 books you read pertaining to your job? Why did you find them interesting? *
+
+What conferences/blogs do you track pertaining to your job? *
+
+What open-source projects do you follow and/or use? Why those? Have you contributed to any projects? Do you have any of your own projects? *
+
+What IDE do you use? What other development tools do you use? *
+
+What programming languages are you proficient in? (i.e can write programs now; not just read a book) *
+
+What specifically have you done to improve your skills in the last 12 months? *
+
+SYSTEMS ARCHITECTURE
+What are techniques that can be used for application scalability? Give concrete examples of how you have utilized these techniques. *
+
+What distributed datastores have you used? What was the load and quantity of data? *
+
+What mechanisms have you used to implement API load balancing, rate throttling, timeouts, and security for microservices? How effective was it? What would you use now for a new implementation? Why? *
+
+MONITORING AND DEV OPS
+What monitoring technologies are available for capturing and analyzing application metrics? Which have you used personally? Why that one and not others? *
+
+What are the key application metrics to monitor for REST API services? How have you personally implemented this? What actions have you taken based on the measured values? *
+
+What are the key application metrics to monitor for stream processing services? How have you personally implemented this? What actions have you taken based on the measured values? *
+
+How have you integrated log analytics and application metrics? What problems did that solve that either alone did not? What would you do differently next time? *
+
+TESTING
+What is your testing skill level? Have you written extensive unit tests for a project? What testing toolkits have you used? Which would you like to use? *
+
+What are the strongest arguments for writing unit tests? *
+
+What are the pros and cons of test-first development? *

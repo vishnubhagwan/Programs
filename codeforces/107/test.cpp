@@ -12,7 +12,7 @@ using namespace std;
 #define s second
 #define pb push_back
 #define mp make_pair
-#define N 4
+#define N 10
 #define pii pair<int, int>
 
 typedef long long int ll;
@@ -24,9 +24,11 @@ int main()
 	int T = 1;
 	cout << T << '\n';
 	while(T--) {
-		int l = rand()%1000000;
-		int r = l + (rand()%(l+1));
-		cout << l << ' ' << r << '\n';
+		int a,b,c;
+		a = rand()%N;
+		b = rand()%N;
+		c = rand()%N;
+		cout << a << ' ' << b << ' ' << c;
 	}
 	return 0;
 }
